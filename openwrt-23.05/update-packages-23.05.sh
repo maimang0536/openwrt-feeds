@@ -332,5 +332,8 @@ git clone https://github.com/destan19/OpenAppFilter OpenAppFilter --depth 1
 rm -rf OpenAppFilter/{.git,.github,README.md,install.sh}
 mv OpenAppFilter/* ./
 
+git clone https://github.com/eamonxg/luci-theme-aurora luci-theme-aurora --depth 1
+rm -rf luci-theme-aurora/{.git,.github,README.md,install.sh}
+
 rm -rf openwrt immortalwrt openwrt-alist ariang-nginx openwrt-alist doc
 ls -d */ | xargs -n 1 basename | paste -sd ' ' - > packages.txt
