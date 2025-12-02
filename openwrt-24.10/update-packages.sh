@@ -320,6 +320,13 @@ git clone https://github.com/destan19/OpenAppFilter OpenAppFilter --depth 1
 rm -rf OpenAppFilter/{.git,.github,README.md,install.sh}
 mv OpenAppFilter/* ./
 
+git clone https://github.com/timsaya/openwrt-bandix bandix --depth 1
+rm -rf bandix/{.git,.github,README.md,install.sh}
+
+git clone https://github.com/timsaya/luci-app-bandix op-bandix --depth 1
+rm -rf op-bandix/{.git,.github,*.md,install.sh,docs}
+mv op-bandix/* ./
+
 git clone https://github.com/eamonxg/luci-theme-aurora luci-theme-aurora --depth 1
 rm -rf luci-theme-aurora/{.git,.github,README.md,install.sh}
 
